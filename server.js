@@ -5,5 +5,5 @@ const app = require("./app.js");
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
-    console.log("Servidor rodando, porta 3001");
+    console.log("Servidor rodando, porta 3000");
 });

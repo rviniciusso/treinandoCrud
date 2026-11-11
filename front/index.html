@@ -7,31 +7,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="container">
-        <h2>Cadastre um Item</h2>
-        <form class="cadastrar" id="cadastrar">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" required>
+    <div>
+        <section class="container">
+            <h2>Cadastre um Item</h2>
+            <form class="cadastrar" id="cadastrar">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
 
-            <label for="categoria">Categoria:</label>
-            <input type="text" id="categoria" required>
+                <label for="categoria">Categoria:</label>
+                <input type="text" id="categoria" required>
 
-            <label for="marca">Marca:</label>
-            <input type="text" id="marca" required>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" required>
 
-            <label for="problema">Problema:</label>
-            <input type="text" id="problema" required>
+                <label for="problema">Problema:</label>
+                <input type="text" id="problema" required>
 
-            <label for="status">Status:</label>
-            <select name="status" id="status">
-                <option value="Em análise">Em análise</option>
-                <option value="Em manutenção">Em manutenção</option>
-                <option value="Finalizado">Finalizado</option>
-            </select>
-            <button type="submit" id="btn-cad">Cadastrar</button>
-        </form>
-    </section>
-    <section class="container">
+                <label for="status">Status:</label>
+                <select name="status" id="status">
+                    <option value="Em análise">Em análise</option>
+                    <option value="Em manutenção">Em manutenção</option>
+                    <option value="Finalizado">Finalizado</option>
+                </select>
+                <button type="submit" id="btn-cad">Cadastrar</button>
+            </form>
+        </section>
+        <section class="container">
+            <form class="atualizar">
+                <button id="btn-pes-att">Pesquisar</button>
+                <input type="text" id="buscaAtt" placeholder="Digite o ID do chamado">
+            </form>
+            <div class="itens" id="container-itens-att" class="container-itens">
+                <div class="item">
+                    <p>Pequise um chamado para atualizar</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <form class="excluir">
+                <button id="btn-pes-del">Pesquisar</button>
+                <input type="text" id="buscaDel" placeholder="Digite o ID do chamado">
+            </form>
+            <div class="itens" id="container-itens-del" class="container-itens">
+                <div class="item">
+                    <p>Pequise um chamado para excluir</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="c-carregar">
         <form class="carregar">
             <button id="btn-load">Carregar Itens</button>
             <input type="text" id="filter">
@@ -47,28 +71,7 @@
 
         </div>
     </section>
-    <section class="container">
-        <form class="atualizar">
-            <button id="btn-pes-att">Pesquisar</button>
-            <input type="text" id="buscaAtt" placeholder="Digite o ID do chamado">
-        </form>
-        <div class="itens" id="container-itens-att" class="container-itens">
-            <div class="item">
-                <p>Pequise um chamado para atualizar</p>
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <form class="excluir">
-            <button id="btn-pes-del">Pesquisar</button>
-            <input type="text" id="buscaDel" placeholder="Digite o ID do chamado">
-        </form>
-        <div class="itens" id="container-itens-del" class="container-itens">
-            <div class="item">
-                <p>Pequise um chamado para excluir</p>
-            </div>
-        </div>
-    </section>
+    
     <script src="./script.js"></script>
 </body>
 </html>
